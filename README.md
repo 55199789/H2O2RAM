@@ -1,4 +1,4 @@
-# H2O2RAM: A High-performance Hierarchcial Doubly Oblivious RAM
+# H2O2RAM: A High-performance Hierarchical Doubly Oblivious RAM
 
 ## Setup TDX
 
@@ -50,7 +50,7 @@ Note that the full benchmark takes a lot of time, and it will fail if the runnin
 ../bin/ORAMBenchmark --benchmark_repetitions=10
 ```
 
-Instead, we recommand to run the Python scripts that will save experimental results one by one: 
+Instead, we recommend to run the Python scripts that will save experimental results one by one: 
 ```bash 
 cd benchmarks
 python3 oram_exp_script.py &
