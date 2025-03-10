@@ -24,7 +24,7 @@ The output should include
 2. <span id = 'prep'> Build your `demo.raw` by following [this blog](https://blog.programster.org/create-ubuntu-20-kvm-guest-from-cloud-image). Alternatively, you also have the option to download our pre-configured VM image directly as follows. </span>
 
 ```bash
-wget https://zenodo.org/records/14998386/files/demo.raw
+wget https://zenodo.org/records/15000727/files/H2O2RAM.zip && unzip demo.zip
 ```
 
 3. Start your TD VM. The default username and password of the prepared image are ```root``` and ```123456```.
