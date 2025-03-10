@@ -22,3 +22,8 @@ plots
 failure_prob
 *.json
 *results
+*.log
+*.img
+*.qcow2
+*.raw
+meta-data

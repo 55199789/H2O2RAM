@@ -9,7 +9,7 @@ RUN wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/nul
     apt-add-repository "deb https://apt.kitware.com/ubuntu/ $(lsb_release -cs) main"
 
 RUN apt update && \
-    apt-get install -y g++ vim cmake git libboost-dev libgdal-dev  libomp-dev libtbb-dev libgtest-dev libnlopt-dev
+    apt-get install -y g++ vim cmake git libboost-dev libgdal-dev  libomp-dev libtbb-dev libgtest-dev libnlopt-dev libssl-dev
 
 RUN cmake --version 
 

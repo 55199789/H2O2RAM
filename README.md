@@ -21,9 +21,13 @@ The output should include
 [   22.593272] tdx: TDX module initialized.
 ```
 
-2. Build your `demo.img` like [this blog](https://blog.programster.org/create-ubuntu-20-kvm-guest-from-cloud-image).
+2. <span id = 'prep'> Build your `demo.raw` by following [this blog](https://blog.programster.org/create-ubuntu-20-kvm-guest-from-cloud-image). Alternatively, you also have the option to download our pre-configured VM image directly as follows. </span>
 
-3. Start your TD VM.
+```bash
+wget https://zenodo.org/records/14998386/files/demo.raw
+```
+
+3. Start your TD VM. The default username and password of the prepared image are ```root``` and ```123456```.
 
 ```bash
 ./start.sh
@@ -35,12 +39,17 @@ The output should include
 
 ## Compile
 
+If you choose to prepare your own VM image in [step 2](#prep), you need to pull and compile our project by
+
 ```bash
 git clone https://github.com/55199789/H2O2RAM.git
-cd ORAM
+cd H2O2RAM
+bash ./setup.sh
 mkdir build && cd build
 cmake .. && make -j
 ```
+
+Otherwise, you can simply login to the VM and enter the directory ```~/H2O2RAM```. 
 
 ## Benchmark
 
