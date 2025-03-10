@@ -23,3 +23,8 @@ failure_prob
 *.json
 *results
 *.json
+*.img
+*.qcow2
+*.raw
+meta-data
+*.log
